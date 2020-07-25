@@ -1,0 +1,361 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="flirt.and.date"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:8:5-80
+13-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:8:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:9:5-81
+14-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.android.installreferrer:installreferrer:2.1] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\014ed3c11aa411239e6e487c006f28f3\jetified-installreferrer-2.1\AndroidManifest.xml:9:5-110
+15-->[com.android.installreferrer:installreferrer:2.1] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\014ed3c11aa411239e6e487c006f28f3\jetified-installreferrer-2.1\AndroidManifest.xml:9:22-107
+16    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\9e3c30aeeff5a2da3cf765c353395e66\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:24:5-68
+16-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\9e3c30aeeff5a2da3cf765c353395e66\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:24:22-65
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:26:22-79
+18
+19    <application
+19-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:11:5-88:19
+20        android:name="flirt.and.date.MyApp"
+20-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:12:9-30
+21        android:allowBackup="true"
+21-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:13:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\b7ae0abbdd112b8dc5023b2e1e9d5841\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:14:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:15:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:16:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:17:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+29-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:18:9-65
+30        android:usesCleartextTraffic="true" >
+30-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:19:9-44
+31        <receiver
+31-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:21:9-24:38
+32            android:name="flirt.and.date.MyReceiver"
+32-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:22:13-39
+33            android:enabled="true"
+33-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:23:13-35
+34            android:exported="true" />
+34-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:24:13-36
+35
+36        <service
+36-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:26:9-29:39
+37            android:name="flirt.and.date.PushService"
+37-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:27:13-40
+38            android:enabled="true"
+38-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:28:13-35
+39            android:exported="true" />
+39-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:29:13-36
+40
+41        <activity
+41-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:31:9-34:56
+42            android:name="flirt.and.date.Login"
+42-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:32:13-34
+43            android:screenOrientation="portrait" />
+43-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:33:13-49
+44        <activity
+44-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:35:9-38:56
+45            android:name="flirt.and.date.Chat"
+45-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:36:13-33
+46            android:screenOrientation="portrait" />
+46-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:37:13-49
+47        <activity
+47-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:39:9-42:56
+48            android:name="flirt.and.date.WelcomeScreen"
+48-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:40:13-42
+49            android:screenOrientation="portrait" />
+49-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:41:13-49
+50        <activity
+50-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:43:9-46:56
+51            android:name="flirt.and.date.Sex"
+51-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:44:13-32
+52            android:screenOrientation="portrait" />
+52-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:45:13-49
+53        <activity
+53-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:47:9-50:56
+54            android:name="flirt.and.date.SignUp"
+54-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:48:13-35
+55            android:screenOrientation="portrait" />
+55-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:49:13-49
+56        <activity
+56-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:51:9-54:56
+57            android:name="flirt.and.date.Info"
+57-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:52:13-33
+58            android:screenOrientation="portrait" />
+58-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:53:13-49
+59        <activity
+59-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:55:9-58:56
+60            android:name="flirt.and.date.Choose"
+60-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:56:13-35
+61            android:screenOrientation="portrait" />
+61-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:57:13-49
+62        <activity
+62-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:59:9-62:56
+63            android:name="flirt.and.date.Photos"
+63-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:60:13-35
+64            android:screenOrientation="portrait" />
+64-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:61:13-49
+65        <activity
+65-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:63:9-66:56
+66            android:name="flirt.and.date.DateBirth"
+66-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:64:13-38
+67            android:screenOrientation="portrait" />
+67-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:65:13-49
+68        <activity
+68-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:67:9-70:56
+69            android:name="flirt.and.date.Target"
+69-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:68:13-35
+70            android:screenOrientation="portrait" />
+70-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:69:13-49
+71        <activity
+71-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:71:9-80:20
+72            android:name="flirt.and.date.MainActivity"
+72-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:72:13-41
+73            android:screenOrientation="portrait" >
+73-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:73:13-49
+74            <intent-filter>
+74-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:75:13-79:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:76:17-69
+75-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:76:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:78:17-77
+77-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:78:27-74
+78            </intent-filter>
+79        </activity>
+80        <activity
+80-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:81:9-83:62
+81            android:name="flirt.and.date.MyView"
+81-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:82:13-35
+82            android:configChanges="orientation|screenSize" />
+82-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:83:13-59
+83
+84        <uses-library
+84-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:85:9-87:40
+85            android:name="org.apache.http.legacy"
+85-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:86:13-50
+86            android:required="false" />
+86-->C:\Users\nasty\AndroidStudioProjects\FirstAndDate\app\src\main\AndroidManifest.xml:87:13-37
+87        <!--
+88             FirebaseMessagingService performs security checks at runtime,
+89             but set to not exported to explicitly avoid allowing another app to call it.
+90        -->
+91        <service
+91-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:28:9-35:19
+92            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+92-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:29:13-82
+93            android:directBootAware="true"
+93-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:30:13-43
+94            android:exported="false" >
+94-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:31:13-37
+95            <intent-filter android:priority="-500" >
+95-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:32:13-34:29
+95-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:32:28-51
+96                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+96-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:33:17-78
+96-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:33:25-75
+97            </intent-filter>
+98        </service>
+99        <service
+99-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:36:9-42:19
+100            android:name="com.google.firebase.components.ComponentDiscoveryService"
+100-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:37:13-84
+101            android:directBootAware="true"
+101-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\b8cb1d9e58ef48694f023b4d83341e2c\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+102            android:exported="false" >
+102-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:38:13-37
+103            <meta-data
+103-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:39:13-41:85
+104                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+104-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:40:17-119
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-messaging:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\902bea892e1e0776745dc6bbc9b5ee24\jetified-firebase-messaging-20.2.3\AndroidManifest.xml:41:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+107                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+107-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-database:19.3.1] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\47c4ceef8a07dd4083ef7216b9ba3d95\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+110                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+110-->[com.google.firebase:firebase-database:19.3.1] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\47c4ceef8a07dd4083ef7216b9ba3d95\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-database:19.3.1] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\47c4ceef8a07dd4083ef7216b9ba3d95\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\2b4cc26ae983c2ffbc7936db124490eb\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+113                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+113-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\2b4cc26ae983c2ffbc7936db124490eb\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\2b4cc26ae983c2ffbc7936db124490eb\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+115            <meta-data
+115-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\9e3c30aeeff5a2da3cf765c353395e66\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:30:13-32:85
+116                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+116-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\9e3c30aeeff5a2da3cf765c353395e66\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:31:17-139
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\9e3c30aeeff5a2da3cf765c353395e66\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:32:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:32:13-34:85
+119                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+119-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:33:17-96
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:34:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\5a3bd5f0deacbbac6e49a74dc9e400e7\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+122                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+122-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\5a3bd5f0deacbbac6e49a74dc9e400e7\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\5a3bd5f0deacbbac6e49a74dc9e400e7\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\db3f4021136ea538ca9b3360b52d0eb4\jetified-firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+125                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+125-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\db3f4021136ea538ca9b3360b52d0eb4\jetified-firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\db3f4021136ea538ca9b3360b52d0eb4\jetified-firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+127        </service>
+128
+129        <activity
+129-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+130            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+130-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+131            android:excludeFromRecents="true"
+131-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+132            android:exported="true"
+132-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+133            android:launchMode="singleTask"
+133-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+134            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+134-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+135-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\cfaec840cc724188ce650fafdf01c623\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+136
+137        <receiver
+137-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:29:9-33:20
+138            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+138-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:30:13-85
+139            android:enabled="true"
+139-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:31:13-35
+140            android:exported="false" >
+140-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:32:13-37
+141        </receiver>
+142
+143        <service
+143-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:35:9-38:40
+144            android:name="com.google.android.gms.measurement.AppMeasurementService"
+144-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:36:13-84
+145            android:enabled="true"
+145-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:37:13-35
+146            android:exported="false" />
+146-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:38:13-37
+147        <service
+147-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:39:9-43:72
+148            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+148-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:40:13-87
+149            android:enabled="true"
+149-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:41:13-35
+150            android:exported="false"
+150-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:42:13-37
+151            android:permission="android.permission.BIND_JOB_SERVICE" />
+151-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\ec7c7c4603f9897123737c7989096aeb\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:43:13-69
+152
+153        <receiver
+153-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:37:9-44:20
+154            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+154-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:38:13-78
+155            android:exported="true"
+155-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:39:13-36
+156            android:permission="com.google.android.c2dm.permission.SEND" >
+156-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:40:13-73
+157            <intent-filter>
+157-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:41:13-43:29
+158                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+158-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:42:17-81
+158-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\48d8caa6c686d43076dd7da4fb383cdd\jetified-firebase-iid-20.2.3\AndroidManifest.xml:42:25-78
+159            </intent-filter>
+160        </receiver>
+161
+162        <provider
+162-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\b8cb1d9e58ef48694f023b4d83341e2c\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+163            android:name="com.google.firebase.provider.FirebaseInitProvider"
+163-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\b8cb1d9e58ef48694f023b4d83341e2c\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+164            android:authorities="flirt.and.date.firebaseinitprovider"
+164-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\b8cb1d9e58ef48694f023b4d83341e2c\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+165            android:exported="false"
+165-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\b8cb1d9e58ef48694f023b4d83341e2c\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+166            android:initOrder="100" />
+166-->[com.google.firebase:firebase-common:19.3.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\b8cb1d9e58ef48694f023b4d83341e2c\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+167
+168        <activity
+168-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\6193f302fb310b6c0eca1559398193fe\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+169            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+169-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\6193f302fb310b6c0eca1559398193fe\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+170            android:exported="false"
+170-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\6193f302fb310b6c0eca1559398193fe\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+171            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+171-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\6193f302fb310b6c0eca1559398193fe\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+172
+173        <meta-data
+173-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\e16fe326ba624ca3d443b6fe4a3c9a67\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+174            android:name="com.google.android.gms.version"
+174-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\e16fe326ba624ca3d443b6fe4a3c9a67\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+175            android:value="@integer/google_play_services_version" />
+175-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\e16fe326ba624ca3d443b6fe4a3c9a67\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+176
+177        <service
+177-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\723ebd629732e8a9ac18b80471cd562f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+178            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+178-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\723ebd629732e8a9ac18b80471cd562f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+179            android:exported="false" >
+179-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\723ebd629732e8a9ac18b80471cd562f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+180            <meta-data
+180-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\723ebd629732e8a9ac18b80471cd562f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+181                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+181-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\723ebd629732e8a9ac18b80471cd562f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+182                android:value="cct" />
+182-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\723ebd629732e8a9ac18b80471cd562f\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+183        </service>
+184        <service
+184-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\f820c31186d7a229698249e7073695fc\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+185            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+185-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\f820c31186d7a229698249e7073695fc\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+186            android:exported="false"
+186-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\f820c31186d7a229698249e7073695fc\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+187            android:permission="android.permission.BIND_JOB_SERVICE" >
+187-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\f820c31186d7a229698249e7073695fc\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+188        </service>
+189
+190        <receiver
+190-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\f820c31186d7a229698249e7073695fc\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+191            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+191-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\f820c31186d7a229698249e7073695fc\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+192            android:exported="false" />
+192-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\nasty\.gradle\caches\transforms-2\files-2.1\f820c31186d7a229698249e7073695fc\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+193    </application>
+194
+195</manifest>

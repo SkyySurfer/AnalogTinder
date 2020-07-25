@@ -1,0 +1,270 @@
+[
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_sex.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\sex.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_welcome_screen.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\welcome_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_choose.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\choose.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_signup.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\signup.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_arrow.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\back_arrow.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_sign_up.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\login.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boy_grey.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\boy_grey.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addphoto.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\addphoto.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_no.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\no.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_grey_btn.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\grey_btn.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_finish.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\button_finish.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_my_view.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\my_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boyfriend.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\boyfriend.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_female.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\female.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_girl_grey.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\girl_grey.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_info.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\info.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_photos.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\photos.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_info.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\info.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_date_birth.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\date_birth.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_flirt_mini.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\flirt_mini.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_male_grey.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\male_grey.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_login.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_flirt_welcome.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\flirt_welcome.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_target.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\target.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_arrowbottom.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\arrowbottom.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_512.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\icon_512.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_chat.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\back_chat.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ok.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\ok.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_marked.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\marked.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_next.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\next.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_default_photo.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\default_photo.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_chat.xml.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_female_grey.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\female_grey.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_send.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\send.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_marker.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\marker.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_girlfriend.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\girlfriend.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notmarked.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\notmarked.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_male.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\male.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    }
+]

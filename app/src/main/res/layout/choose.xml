@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Choose">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon" />
+
+            <ImageView
+                android:id="@+id/title"
+                android:layout_width="185dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:srcCompat="@drawable/flirt_welcome" />
+
+            <ImageButton
+                android:id="@+id/message"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:background="@drawable/send" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="369dp"
+                android:layout_height="588dp"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/left"
+                android:layout_width="185dp"
+                android:layout_height="588dp"
+                android:layout_gravity="left"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/right"
+                android:layout_width="185dp"
+                android:layout_height="588dp"
+                android:layout_gravity="right"
+                android:background="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="4dp"
+                    android:alpha="0.5"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/marker"
+                    android:layout_width="58dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/marker" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/back"
+                        android:layout_width="30dp"
+                        android:layout_height="29dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_arrow" />
+
+                    <ImageButton
+                        android:id="@+id/no"
+                        android:layout_width="61dp"
+                        android:layout_height="61dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/no" />
+
+                    <ImageButton
+                        android:id="@+id/ok"
+                        android:layout_width="61dp"
+                        android:layout_height="61dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ok" />
+
+                    <ImageButton
+                        android:id="@+id/info"
+                        android:layout_width="29dp"
+                        android:layout_height="39dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/info" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

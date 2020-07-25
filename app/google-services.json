@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "475603021930",
+    "firebase_url": "https://flirt-and-date-cfaad.firebaseio.com",
+    "project_id": "flirt-and-date-cfaad",
+    "storage_bucket": "flirt-and-date-cfaad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475603021930:android:f75799add1adae7f579a13",
+        "android_client_info": {
+          "package_name": "flirt.and.date"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475603021930-nin92gauo4leeagod1og9t7o3gufjj4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZk6HtrO3wt8ZYywSzPPSeFd8yPtcs35I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475603021930-nin92gauo4leeagod1og9t7o3gufjj4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

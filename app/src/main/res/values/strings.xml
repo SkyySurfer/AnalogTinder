@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Flirt and Date</string>
+    <string name="notregistered">Not registered yet? Sign up now!</string>
+    <string name="haveaccount">I have already created an account</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="retry">Retry password</string>
+    <string name="accept">I accept the terms and conditions</string>
+    <string name="get_url">https://website-tracker.com/params_dating.json</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="youare">You are…</string>
+    <string name="looking">Looking for…</string>
+    <string name="girl">Girlfriend</string>
+    <string name="boy">Boyfriend</string>
+    <string name="born">I was born on…</string>
+    <string name="date">DD/MM/YYYY</string>
+    <string name="about">About me</string>
+    <string name="matches">You didn\'t get any matches</string>
+    <string name="best_photos">Upload your best photos</string>
+    <string name="description">Add description</string>
+    <string name="myAlphaNumeric">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string-array name="push_notifications">
+        <item>XX women looking for dates in 3 km area near you!”</item>
+        <item>Somebody liked you - take a look!</item>
+        <item>Your matches are waiting for your messages!</item>
+        <item>You receive a Like - check out!</item>
+        <item>You have received a new message!</item>
+    </string-array>
+
+    <string-array name="women">
+        <item>Anna</item>
+        <item>Anastasia</item>
+        <item>Elizabeth</item>
+        <item>Maria</item>
+        <item>Oksana</item>
+        <item>Hanna</item>
+        <item>Valery</item>
+        <item>Sabrina</item>
+        <item>Kate</item>
+        <item>Nina</item>
+        <item>Karry</item>
+        <item>Miranda</item>
+        <item>Charlotte</item>
+        <item>Samanta</item>
+    </string-array>
+
+
+    <string-array name="men">
+        <item>Jack</item>
+        <item>Tom</item>
+        <item>James</item>
+        <item>Benjamin</item>
+        <item>John</item>
+        <item>Michael</item>
+        <item>Brad</item>
+        <item>Harry</item>
+        <item>Steven</item>
+        <item>Liam</item>
+        <item>Kristian</item>
+        <item>Vlad</item>
+    </string-array>
+
+    <string name="km">km away</string>
+    <string name="years">y.o.</string>
+</resources>
