@@ -22,13 +22,16 @@ import java.util.Random;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
+import static flirt.and.date.Constants.userInfo;
+
 public class Info extends AppCompatActivity {
     ImageButton message;
     CircleImageView icon;
     TextView name, description, distance;
-    String randomUserId;
+    String mUserId, randomUserId;
     UserInfo randomUserInfo, mUserInfo;
     String formattedName = "", formattedDistance = "";
+    FirebaseDatabaseClient firebaseDatabaseClient;
 
     private void findViews(){
         icon = findViewById(R.id.icon);
@@ -46,6 +49,9 @@ public class Info extends AppCompatActivity {
         setContentView(R.layout.info);
 
         findViews();
+
+        firebaseDatabaseClient = new FirebaseDatabaseClient();
+        mUserId = firebaseDatabaseClient.getUserId();
 
 
         Gson gson = new Gson();
@@ -68,7 +74,7 @@ public class Info extends AppCompatActivity {
             description.setText(randomUserInfo.getDescription());
 
             if (mUserInfo.getPhotosCount()>0){
-                downloadImage(icon, randomUserId+0); //иконка
+                downloadImage(icon, mUserId+0); //иконка
             }
         }
 
@@ -77,6 +83,13 @@ public class Info extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 goToActivity(Chat.class);
+            }
+        });
+
+        icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToPhotos();
             }
         });
 
@@ -116,6 +129,14 @@ public class Info extends AppCompatActivity {
 
     private void goToActivity(Class activity){
         Intent intent = new Intent(this, activity);
+        startActivity(intent);
+        finish();
+    }
+
+
+    private void goToPhotos(){
+        Intent intent = new Intent(this, Photos.class);
+        intent.putExtra(Constants.userInfo, mUserInfo);
         startActivity(intent);
         finish();
     }

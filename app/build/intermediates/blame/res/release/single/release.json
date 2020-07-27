@@ -252,6 +252,10 @@
         "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\back_arrow.png"
     },
     {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\release\\drawable_black.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\black.png"
+    },
+    {
         "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\release\\drawable_default_photo.png.flat",
         "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\default_photo.png"
     },

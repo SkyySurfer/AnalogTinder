@@ -76,6 +76,7 @@ public class FirebaseDatabaseClient {
         mainRef = database.getReference();
     }
 
+
     void saveToDB(UserInfo profile){
 
         userRef.setValue(profile);
@@ -87,6 +88,7 @@ public class FirebaseDatabaseClient {
     void filterDB(String target, final UpdatingUI updatingUIActivity){
 
         final Query myQuery;
+        LogClass.log("target: " + target);
 
         if (target.equals(Constants.boyfriend)){
             myQuery = mainRef.child(Constants.database_users)
@@ -144,6 +146,7 @@ public class FirebaseDatabaseClient {
 
                         userIds.add(randomUserId);
                         users.add(randomUserInfo);
+                        LogClass.log("random user sex is " + randomUserInfo.getSex());
 
                         if (!isUpdated) {
                             updatingUIActivity.updateUI();

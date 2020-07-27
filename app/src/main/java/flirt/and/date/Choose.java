@@ -26,6 +26,8 @@ import java.util.Random;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
+import static flirt.and.date.Constants.userInfo;
+
 public class Choose extends AppCompatActivity implements UpdatingUI {
 UserInfo randomUserInfo, mUserInfo;
 ImageView photo;
@@ -68,10 +70,10 @@ String formattedName = "", formattedDistance = "";
 
         Gson gson = new Gson();
         SharedPreferencesEditor sharedPreferencesEditor = new SharedPreferencesEditor(getApplicationContext());
-        if (sharedPreferencesEditor.checkPreferencesStorage(Constants.userInfo)){
+        if (sharedPreferencesEditor.checkPreferencesStorage(userInfo)){
 
             LogClass.log("sharedPreferences has saved userInfo");
-            String json = sharedPreferencesEditor.getStringValue(Constants.userInfo);
+            String json = sharedPreferencesEditor.getStringValue(userInfo);
             mUserInfo = gson.fromJson(json, UserInfo.class);
 
 
@@ -128,6 +130,13 @@ String formattedName = "", formattedDistance = "";
 
         showUser(0);
 
+        icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToPhotos();
+            }
+        });
+
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -152,7 +161,7 @@ String formattedName = "", formattedDistance = "";
         message.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToChat();
+                goToActivity(Chat.class);
             }
         });
 
@@ -209,8 +218,8 @@ String formattedName = "", formattedDistance = "";
         storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                // Got the download URL for 'users/me/profile.png'
-                LogClass.log("image was downloaded, uri:" + uri.toString());
+
+//                LogClass.log("image was downloaded, uri:" + uri.toString());
 
                 Picasso.with(getApplicationContext()).load(uri).into(imageView);
 
@@ -228,7 +237,7 @@ String formattedName = "", formattedDistance = "";
 
     private void goToInfo(){
         Intent intent = new Intent(this, Info.class);
-        intent.putExtra(Constants.userInfo, mUserInfo);
+        intent.putExtra(userInfo, mUserInfo);
         intent.putExtra(Constants.randomUserInfo, randomUserInfo);
         intent.putExtra(Constants.randomUserId, randomUserId);
         intent.putExtra(Constants.formattedName,formattedName);
@@ -237,12 +246,18 @@ String formattedName = "", formattedDistance = "";
         finish();
     }
 
-    private void goToChat(){
-        Intent intent = new Intent(this, Chat.class);
+    private void goToActivity(Class activity){
+        Intent intent = new Intent(this, activity);
         startActivity(intent);
         finish();
     }
 
+    private void goToPhotos(){
+        Intent intent = new Intent(this, Photos.class);
+        intent.putExtra(Constants.userInfo, mUserInfo);
+        startActivity(intent);
+        finish();
+    }
 
 
     private String formatDistanceData(UserInfo user){

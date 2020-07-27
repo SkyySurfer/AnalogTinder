@@ -7,6 +7,12 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission
+        android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+    <uses-permission
+        android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND"/>
+
 
     <application
         android:name=".MyApp"
@@ -17,16 +23,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
-
         <receiver
-            android:name=".MyReceiver"
+            android:name=".NotificationReceiver"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="false"></receiver>
 
         <service
-            android:name=".PushService"
-            android:enabled="true"
-            android:exported="true" />
+            android:name=".MyNotificationIntentService"
+            android:exported="false" />
 
         <activity
             android:name=".Login"
@@ -39,7 +43,9 @@
         <activity
             android:name=".WelcomeScreen"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
+            tools:ignore="LockedOrientationActivity" >
+
+        </activity>
         <activity
             android:name=".Sex"
             android:screenOrientation="portrait"

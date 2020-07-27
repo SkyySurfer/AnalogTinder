@@ -112,6 +112,10 @@
         "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\drawable_black.png.flat",
+        "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\drawable\\black.png"
+    },
+    {
         "merged": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\build\\intermediates\\res\\merged\\debug\\layout_info.xml.flat",
         "source": "C:\\Users\\nasty\\AndroidStudioProjects\\FirstAndDate\\app\\src\\main\\res\\layout\\info.xml"
     },

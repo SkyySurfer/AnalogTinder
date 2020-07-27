@@ -43,49 +43,50 @@
 
             <ImageButton
                 android:id="@+id/img1"
-                android:layout_width="106dp"
-                android:layout_height="138dp"
-                android:layout_margin="10dp"
+                android:layout_width="104dp"
+                android:layout_height="137dp"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/addphoto"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/img2"
-                android:layout_width="106dp"
-                android:layout_height="138dp"
-                android:layout_margin="10dp"
+                android:layout_width="104dp"
+                android:layout_height="137dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/addphoto"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/img3"
-                android:layout_width="106dp"
-                android:layout_height="138dp"
-                android:layout_margin="10dp"
+                android:layout_width="104dp"
+                android:layout_height="137dp"
+                android:layout_marginBottom="4dp"
                 android:background="@drawable/addphoto"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/img4"
-                android:layout_width="106dp"
-                android:layout_height="138dp"
-                android:layout_margin="10dp"
+                android:layout_width="104dp"
+                android:layout_height="137dp"
                 android:background="@drawable/addphoto"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/img5"
-                android:layout_width="106dp"
-                android:layout_height="138dp"
-                android:layout_margin="10dp"
+                android:layout_width="104dp"
+                android:layout_height="137dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
                 android:background="@drawable/addphoto"
                 android:scaleType="fitXY" />
 
             <ImageButton
                 android:id="@+id/img6"
-                android:layout_width="106dp"
-                android:layout_height="138dp"
-                android:layout_margin="10dp"
+                android:layout_width="104dp"
+                android:layout_height="137dp"
                 android:background="@drawable/addphoto"
                 android:scaleType="fitXY" />
 

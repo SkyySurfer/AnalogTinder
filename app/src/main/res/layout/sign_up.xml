@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,11 +42,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:digits="@string/myAlphaNumeric"
             android:ems="10"
             android:fontFamily="sans-serif"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:digits="@string/myAlphaNumeric"
             android:textSize="16sp"
             android:typeface="sans" />
 
@@ -87,7 +88,7 @@
             android:id="@+id/signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="120dp"
+            android:layout_marginBottom="100dp"
             android:background="@drawable/signup" />
 
         <TextView

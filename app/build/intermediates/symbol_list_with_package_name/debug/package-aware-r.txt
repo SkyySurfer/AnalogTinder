@@ -696,6 +696,7 @@ drawable arrowbottom
 drawable back
 drawable back_arrow
 drawable back_chat
+drawable black
 drawable boy_grey
 drawable boyfriend
 drawable btn_checkbox_checked_mtrl

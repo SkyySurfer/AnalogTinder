@@ -2,8 +2,14 @@ package flirt.and.date;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +24,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.Random;
+
 public class Login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String email;
@@ -27,6 +35,7 @@ public class Login extends AppCompatActivity {
     TextView notRegistered;
 
 
+
     private void findViews(){
         login = findViewById(R.id.login);
         emailTxt = findViewById(R.id.email);
@@ -34,14 +43,15 @@ public class Login extends AppCompatActivity {
         notRegistered = findViewById(R.id.notregistersignup);
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
         FirebaseApp.initializeApp(this);
-
         mAuth = FirebaseAuth.getInstance();
+
         findViews();
 
 
@@ -70,9 +80,9 @@ public class Login extends AppCompatActivity {
 
 private void openLastDisplay(){
         SharedPreferencesEditor sharedPreferencesEditor = new SharedPreferencesEditor(getApplicationContext());
-        if (sharedPreferencesEditor.checkPreferencesStorage(Constants.userInfo)){
-
+        if (sharedPreferencesEditor.checkPreferencesStorage(Constants.userId)){
             goToView(Choose.class);
+
         }
         else{
             goToView(Sex.class);
@@ -85,11 +95,11 @@ private void openLastDisplay(){
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            LogClass.log("signInWithEmail:success");
+                            LogClass.log("logInWithEmail:success");
                             openLastDisplay();
                         } else {
 
-                            LogClass.log("signInWithEmail:failure" + task.getException());
+                            LogClass.log("logInWithEmail:failure" + task.getException());
                             Toast.makeText(Login.this, "Authentication failed",
                                     Toast.LENGTH_SHORT).show();
                         }

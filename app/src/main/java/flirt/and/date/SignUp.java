@@ -55,6 +55,7 @@ public class SignUp extends AppCompatActivity {
         haveAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 goToView(Login.class);
             }
         });

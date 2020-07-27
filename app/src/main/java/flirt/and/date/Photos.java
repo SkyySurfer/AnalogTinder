@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
 
@@ -18,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -33,22 +35,31 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Photos extends AppCompatActivity {
+    private FirebaseAuth mAuth;
     UserInfo userInfo;
     Button finish;
-    ArrayList<String> photoList = new ArrayList<>();
     String description;
     static final int GALLERY_REQUEST = 1;
     GridLayout gridLayout ;
     ImageButton[] imgs ;
     int photosCount = 0;
+    EditText descriptionTxt;
+    String userId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photos);
 
+        FirebaseApp.initializeApp(this);
+
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user =  mAuth.getCurrentUser();
+        userId = user.getUid();
+
         finish = findViewById(R.id.finish);
         gridLayout = findViewById(R.id.grid);
+        descriptionTxt = findViewById(R.id.description);
 
 
         imgs = new ImageButton[gridLayout.getChildCount()];
@@ -114,6 +125,7 @@ public class Photos extends AppCompatActivity {
 
 
     private void next(){
+        description = descriptionTxt.getText().toString();
         userInfo.setDescription(description);
         userInfo.setDistance(Integer.toString(getRandomDistance()));
         userInfo.setPhotosCount(photosCount);
@@ -130,6 +142,7 @@ public class Photos extends AppCompatActivity {
         String json = gson.toJson(userInfo);
 
         sharedPreferencesEditor.putIntoStorage(Constants.userInfo,json);
+        sharedPreferencesEditor.putIntoStorage(Constants.userId,userId);
         startActivity(intent);
         finish();
     }

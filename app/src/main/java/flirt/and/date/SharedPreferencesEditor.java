@@ -18,6 +18,12 @@ public class SharedPreferencesEditor {
         mySharedPreferencesEditor.apply();
     }
 
+    void putIntoStorage(String key, int value) {
+        SharedPreferences.Editor mySharedPreferencesEditor = sharedPreferences.edit();
+        mySharedPreferencesEditor.putInt(key, value);
+        mySharedPreferencesEditor.apply();
+    }
+
     Boolean checkPreferencesStorage(String key) {
         if (sharedPreferences.contains(key)
                 && !sharedPreferences.getString(key, "").isEmpty()) {
@@ -28,9 +34,27 @@ public class SharedPreferencesEditor {
         }
     }
 
+
+    Boolean checkPreferencesStorageInt(String key) {
+        if (sharedPreferences.contains(key)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     String getStringValue(String key){
         return sharedPreferences.getString(key, "");
     }
 
+
+    int getIntValue(String key){
+        return sharedPreferences.getInt(key,0);
+    }
+
+
+    void deleteValue(String key){
+        sharedPreferences.edit().remove(key).apply();
+    }
 
 }

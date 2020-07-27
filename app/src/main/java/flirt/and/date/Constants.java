@@ -11,6 +11,11 @@ public class Constants {
     final static String sex_filter = "sex";
     final static String randomUserInfo = "random_user";
     final static String randomUserId = "random_user_id";
+    final static String userId = "user_id";
     final static String formattedName = "formatted_name";
     final static String formattedNDistance = "formatted_distance";
+    final static String isTinder= "is_tinder";
+    final static String notificationId= "notification_id";
+    final static String urlBeforeUserLeaveHint= "url_leave_hint";
+    final static String notificationsAreReady = "notifications_ready";
 }
